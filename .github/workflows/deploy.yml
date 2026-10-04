@@ -92,14 +92,26 @@ jobs:
         # Rewrites the Markdown in the workspace so the build below publishes the
         # bilingual site. Nothing here is committed except the translation cache:
         # master stays upstream English, so "Sync fork" keeps merging cleanly.
+        #
+        # Needs: secret OPENROUTER_API_KEY. The base/model default correctly, so
+        # no variables are required. NOTE: an OpenCode zen key will NOT work here
+        # -- zen's free models are gated to the OpenCode client ("the free tier can
+        # only be used from within OpenCode") and return 403 from CI.
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          TRANSLATE_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          TRANSLATE_BASE_URL: ${{ vars.OPENROUTER_BASE_URL }}
+          TRANSLATE_MODEL: ${{ vars.OPENROUTER_MODEL || 'nemotron-3-ultra-550b-a55b:free' }}
+          TRANSLATE_BASE_URL: ${{ vars.OPENROUTER_BASE_URL || 'https://openrouter.ai/api/v1' }}
         run: |
           LIMIT="${{ vars.TRANSLATE_LIMIT }}"; LIMIT="${LIMIT:-1200}"
           python scripts/translate.py slice
-          python scripts/translate.py translate --batch 8 --limit "$LIMIT"
+          if [ -n "${OPENROUTER_API_KEY:-}" ]; then
+            python scripts/translate.py translate --batch 8 --limit "$LIMIT" \
+              || echo "::warning::translation call failed; publishing with the cache as it stands"
+          else
+            echo "::warning::OPENROUTER_API_KEY is not set; skipping translation and publishing the existing cache"
+          fi
+          # apply runs either way: a partial cache still publishes what it has, and
+          # a missing key must never block the English site from deploying.
           python scripts/translate.py apply
           python scripts/translate.py stats
 

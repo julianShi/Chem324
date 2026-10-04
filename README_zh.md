@@ -108,14 +108,31 @@ note，**静默吞掉下一个标题**。所以插入块一律使用**反引号�
 直接在 `translation/zh-cache.json` 里改对应条目即可（键是英文原文），提交后下次构建生效。
 不需要重新翻译任何东西。
 
-## 六、配置
+## 六、一次性设置（第一次使用才需要）
 
-| 位置 | 变量 | 说明 |
-| --- | --- | --- |
-| Secrets | `OPENROUTER_API_KEY` | OpenRouter API key |
-| Variables | `OPENROUTER_BASE_URL` | `https://openrouter.ai/api/v1` |
-| Variables | `OPENROUTER_MODEL` | 默认 `nemotron-3-ultra-550b-a55b:free` |
-| Variables | `TRANSLATE_LIMIT` | 每次运行最多新译段落数，默认 1200 |
+### 1. 打开 GitHub Pages
+
+本仓库的 Pages **目前还没有开启**（API token 没有 `pages` 权限，必须手动开）：
+
+**Settings → Pages → Source: `Deploy from a branch` → Branch: `gh-pages` / `(root)` → Save**
+
+`gh-pages` 分支由 Action 在第一次构建时自动创建。开启后站点出现在
+<https://julianshi.github.io/Chem324/>。
+
+### 2. 配置翻译用的 key
+
+| 位置 | 变量 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| Secrets | `OPENROUTER_API_KEY` | **是** | <https://openrouter.ai/keys> 的 key |
+| Variables | `OPENROUTER_BASE_URL` | 否 | 默认 `https://openrouter.ai/api/v1` |
+| Variables | `OPENROUTER_MODEL` | 否 | 默认 `nemotron-3-ultra-550b-a55b:free` |
+| Variables | `TRANSLATE_LIMIT` | 否 | 每次运行最多新译段落数，默认 1200 |
+
+> **注意：OpenCode zen 的 key 不能用在这里。** 实测 zen 的免费模型（含
+> `nemotron-3-ultra-free`）会返回 `403 FreeTierError: OpenCode's free tier can only
+> be used from within OpenCode`——免费档被限制只能在 OpenCode 客户端内调用，CI 一律 403。
+> 因此本仓库使用 **OpenRouter** 的 key。仓库里原有的 `OPENAI_*` secret/变量是 zen 的，
+> 请另行添加 `OPENROUTER_API_KEY` 这个 secret。
 
 **关于推理开关**：该模型默认会为一句短句消耗数千 reasoning token，实测 8 段要 54 秒。
 脚本默认发送 `reasoning: {enabled: false}`，同样 8 段降到 6 秒（**约 9 倍**），
