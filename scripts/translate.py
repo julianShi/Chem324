@@ -41,7 +41,11 @@ NOTES = ROOT / "translation" / "notes"
 SLICER = Path(__file__).resolve().parent / "myst_slice.py"
 
 DEFAULT_BASE = "https://openrouter.ai/api/v1"
-DEFAULT_MODEL = "nemotron-3-ultra-550b-a55b:free"
+# Fast model for bulk, with the slower/cleaner one as the retry fallback: measured
+# on 10 real paragraphs, lightning ran 32 clean segments/min against ultra's 11,
+# but mangled markup on 1 in 10, and a retry on the same model tends to repeat it.
+DEFAULT_MODEL = "nemotron-3.5-lightning:free"
+DEFAULT_FALLBACK_MODEL = "nemotron-3-ultra-550b-a55b:free"
 MIN_WORDS = 8
 USER_AGENT = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
               "Chrome/122.0 Safari/537.36")
@@ -59,12 +63,18 @@ SYSTEM = (
 
 
 # ------------------------------------------------------------------ utilities
+# Only the eight lecture chapters are translated. physics/, projects/, demos/ and
+# slides-index are reference material, not the taught notes, and are left English.
+CHAPTER_GLOBS = [f"ch0{n}/*.md" for n in range(1, 9)]
+
+
 def pages(explicit: list[str] | None = None) -> list[Path]:
     if explicit:
         return [ROOT / p for p in explicit]
-    return sorted(p for p in ROOT.rglob("*.md")
-                  if not any(x in p.parts for x in
-                             (".git", "_build", "slides", ".zh-work", "translation")))
+    found: list[Path] = []
+    for g in CHAPTER_GLOBS:
+        found.extend(sorted(ROOT.glob(g)))
+    return [p for p in found if p.is_file()]
 
 
 def run(cmd: list[str]) -> subprocess.CompletedProcess:
@@ -204,6 +214,9 @@ def stage_translate(args) -> int:
         return 2
     cache: dict[str, str] = load_json(CACHE, {})
     t = Translator(key, args.base, args.model, not args.keep_reasoning)
+    fallback = None
+    if args.fallback_model and args.fallback_model != args.model:
+        fallback = Translator(key, args.base, args.fallback_model, not args.keep_reasoning)
 
     todo: list[str] = []
     seen = set()
@@ -233,16 +246,28 @@ def stage_translate(args) -> int:
         for k, v in got.items():
             cache[batch[k]] = v
             done += 1
-        # retry stragglers one at a time: a batch-level JSON slip should not lose them
+        # Retry stragglers one at a time, so a batch-level JSON slip or a mangled
+        # segment does not cost the paragraph -- and retry on the FALLBACK model,
+        # because a model that mangled the markup usually reproduces the same
+        # mistake when asked again. Measured: the fast model is ~3x quicker but
+        # drops/mangles markup on roughly 1 segment in 10; the bigger one is clean.
         for k, src in batch.items():
             if k in got:
                 continue
-            try:
-                single = t.translate_batch({"S000": src})
-                if single:
-                    cache[src] = next(iter(single.values()))
-                    done += 1
-            except Exception:
+            placed = False
+            for model_t in (t, fallback):
+                if model_t is None:
+                    continue
+                try:
+                    single = model_t.translate_batch({"S000": src})
+                    if single:
+                        cache[src] = next(iter(single.values()))
+                        done += 1
+                        placed = True
+                        break
+                except Exception:
+                    continue
+            if not placed:
                 failed += 1
         save_json(CACHE, cache)     # persist every batch: a timeout keeps progress
         print(f"  {done}/{len(todo)} done, {failed} failed, "
@@ -294,6 +319,10 @@ def main() -> int:
     ap.add_argument("stage", choices=["slice", "translate", "apply", "stats", "all"])
     ap.add_argument("--pages", nargs="*", help="specific pages, e.g. ch03/01-....md")
     ap.add_argument("--model", default=os.environ.get("TRANSLATE_MODEL", DEFAULT_MODEL))
+    ap.add_argument("--fallback-model",
+                    default=os.environ.get("TRANSLATE_FALLBACK_MODEL",
+                                           DEFAULT_FALLBACK_MODEL),
+                    help="used to retry segments the primary model mangles ('' to disable)")
     ap.add_argument("--base", default=os.environ.get("TRANSLATE_BASE_URL", DEFAULT_BASE))
     ap.add_argument("--batch", type=int, default=8)
     ap.add_argument("--limit", type=int, default=0,

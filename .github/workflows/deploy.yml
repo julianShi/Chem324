@@ -93,13 +93,15 @@ jobs:
         # bilingual site. Nothing here is committed except the translation cache:
         # master stays upstream English, so "Sync fork" keeps merging cleanly.
         #
-        # Needs: secret OPENROUTER_API_KEY. The base/model default correctly, so
-        # no variables are required. NOTE: an OpenCode zen key will NOT work here
-        # -- zen's free models are gated to the OpenCode client ("the free tier can
-        # only be used from within OpenCode") and return 403 from CI.
+        # Needs a secret holding an OpenRouter key: OPENROUTER_API_KEY, or
+        # OPENAI_API_KEY (the name this repo already had). NOTE: an OpenCode zen
+        # key will NOT work regardless of name -- zen gates its free models to the
+        # OpenCode client ("the free tier can only be used from within OpenCode")
+        # and returns 403 from CI.
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          TRANSLATE_MODEL: ${{ vars.OPENROUTER_MODEL || 'nemotron-3-ultra-550b-a55b:free' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY || secrets.OPENAI_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.OPENROUTER_MODEL || 'nemotron-3.5-lightning:free' }}
+          TRANSLATE_FALLBACK_MODEL: ${{ vars.OPENROUTER_FALLBACK_MODEL || 'nemotron-3-ultra-550b-a55b:free' }}
           TRANSLATE_BASE_URL: ${{ vars.OPENROUTER_BASE_URL || 'https://openrouter.ai/api/v1' }}
         run: |
           LIMIT="${{ vars.TRANSLATE_LIMIT }}"; LIMIT="${LIMIT:-1200}"

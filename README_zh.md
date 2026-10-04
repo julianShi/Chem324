@@ -123,16 +123,34 @@ note，**静默吞掉下一个标题**。所以插入块一律使用**反引号�
 
 | 位置 | 变量 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| Secrets | `OPENROUTER_API_KEY` | **是** | <https://openrouter.ai/keys> 的 key |
+| Secrets | `OPENROUTER_API_KEY` 或 `OPENAI_API_KEY` | **是** | <https://openrouter.ai/keys> 的 key（两个名字都认） |
 | Variables | `OPENROUTER_BASE_URL` | 否 | 默认 `https://openrouter.ai/api/v1` |
-| Variables | `OPENROUTER_MODEL` | 否 | 默认 `nemotron-3-ultra-550b-a55b:free` |
+| Variables | `OPENROUTER_MODEL` | 否 | 默认 `nemotron-3.5-lightning:free`（快） |
+| Variables | `OPENROUTER_FALLBACK_MODEL` | 否 | 默认 `nemotron-3-ultra-550b-a55b:free`（准） |
 | Variables | `TRANSLATE_LIMIT` | 否 | 每次运行最多新译段落数，默认 1200 |
 
 > **注意：OpenCode zen 的 key 不能用在这里。** 实测 zen 的免费模型（含
 > `nemotron-3-ultra-free`）会返回 `403 FreeTierError: OpenCode's free tier can only
 > be used from within OpenCode`——免费档被限制只能在 OpenCode 客户端内调用，CI 一律 403。
-> 因此本仓库使用 **OpenRouter** 的 key。仓库里原有的 `OPENAI_*` secret/变量是 zen 的，
-> 请另行添加 `OPENROUTER_API_KEY` 这个 secret。
+> 因此本仓库使用 **OpenRouter** 的 key。
+
+### 3. 翻译范围
+
+只翻译 **ch01–ch08** 八个章节的 Markdown（34 个页面）。
+`physics/`、`projects/`、`demos/`、`slides-index.md` 是参考资料而非讲义正文，
+保持英文。范围定义在 `scripts/translate.py` 的 `CHAPTER_GLOBS`。
+
+### 4. 两个模型：快的主译，准的兜底
+
+实测同样的 10 段真实段落：
+
+| 模型 | 耗时 | 标记完好 | 换算 |
+| --- | --- | --- | --- |
+| `nemotron-3.5-lightning:free` | 16.9s | 9/10 | ~32 段/分 |
+| `nemotron-3-ultra-550b-a55b:free` | 56.0s | 10/10 | ~11 段/分 |
+
+所以默认用 **快模型批量翻译**，凡是标记校验不通过的单段，再用**准模型单独重试**——
+换一个模型重试有意义，因为同一个模型往往会重复同一个错误。
 
 **关于推理开关**：该模型默认会为一句短句消耗数千 reasoning token，实测 8 段要 54 秒。
 脚本默认发送 `reasoning: {enabled: false}`，同样 8 段降到 6 秒（**约 9 倍**），

@@ -760,9 +760,15 @@ def cmd_apply(a) -> int:
         require = ids
     missing = sorted(require - set(zh))
     if missing:
-        print(f"FAIL: {len(missing)} of {len(require)} segment(s) untranslated: "
-              f"{missing[:12]}", file=sys.stderr)
-        return 2
+        msg = (f"{len(missing)} of {len(require)} segment(s) not translated yet; "
+               f"page will be partly English: {missing[:8]}")
+        if getattr(a, "strict", False):
+            print(f"FAIL: {msg}", file=sys.stderr)
+            return 2
+        # Incremental filling is the normal case in CI: the cache grows over
+        # several runs, so a partly-translated page must still publish. Use
+        # --strict when validating that a chapter is genuinely complete.
+        print(f"WARN: {msg}", file=sys.stderr)
 
     def is_list_item(idx: int) -> bool:
         """True when item idx is the text of a bullet/numbered list entry: its
@@ -1046,6 +1052,8 @@ def main() -> int:
                    help="interleave: also translate Markdown table cells. Off by default: "
                         "cells are short phrases, and a half-translated table reads worse "
                         "than one left in English")
+    s.add_argument("--strict", action="store_true",
+                   help="fail instead of warning when some segments have no translation")
     s.set_defaults(func=cmd_apply)
 
     s = sub.add_parser("verify")
