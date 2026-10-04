@@ -88,9 +88,40 @@ jobs:
           echo "JUPYTER_BASE_URL=http://127.0.0.1:8888" >> "$GITHUB_ENV"
           echo "JUPYTER_TOKEN=$TOKEN" >> "$GITHUB_ENV"
 
+      - name: Generate bilingual Markdown (Chinese translation)
+        # Rewrites the Markdown in the workspace so the build below publishes the
+        # bilingual site. Nothing here is committed except the translation cache:
+        # master stays upstream English, so "Sync fork" keeps merging cleanly.
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          TRANSLATE_BASE_URL: ${{ vars.OPENROUTER_BASE_URL }}
+        run: |
+          LIMIT="${{ vars.TRANSLATE_LIMIT }}"; LIMIT="${LIMIT:-1200}"
+          python scripts/translate.py slice
+          python scripts/translate.py translate --batch 8 --limit "$LIMIT"
+          python scripts/translate.py apply
+          python scripts/translate.py stats
+
+      - name: Persist the translation cache
+        # The cache is the only durable artefact of the translation. Committing it
+        # here means each run starts from the previous run's work, so a weekly sync
+        # only translates what the author actually changed. [skip ci] stops this
+        # commit from re-triggering the workflow it is part of.
+        run: |
+          git add -- translation/zh-cache.json
+          if git diff --cached --quiet; then
+            echo "cache unchanged"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(zh): update translation cache [skip ci]"
+            git push
+          fi
+
       - name: Build HTML
         env:
-          # Served at https://dpotoyan.github.io/Chem324/ -> assets need the /Chem324 prefix.
+          # Served at https://julianshi.github.io/Chem324/ -> assets need the /Chem324 prefix.
           BASE_URL: /Chem324
           # Retina (2x) matplotlib PNGs; config lives in .ipython/profile_default/.
           IPYTHONDIR: ${{ github.workspace }}/.ipython
