@@ -63,6 +63,14 @@ def check(path: str) -> tuple[int, int, int, int, int]:
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        # A checker handed no files must not report success: it would exit 0 having
+        # verified nothing, which reads as "clean" to any caller that only inspects
+        # the exit code. Callers that glob for files (and silently match none) hit
+        # this too, so make the empty case loud and non-zero.
+        print("usage: check_blocks.py FILE [FILE ...]", file=sys.stderr)
+        print("error: no files given -- nothing was checked", file=sys.stderr)
+        sys.exit(2)
     bad = 0
     for path in sys.argv[1:]:
         glued, unclosed, depth, premature, tick_odd = check(path)
@@ -74,4 +82,5 @@ if __name__ == "__main__":
         print(f"  backtick fence count odd (1 = unbalanced)        : {tick_odd}")
         if glued or unclosed or depth or premature or tick_odd:
             bad += 1
+    print(f"\nchecked {len(sys.argv) - 1} file(s), {bad} with problems")
     sys.exit(1 if bad else 0)
