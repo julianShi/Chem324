@@ -7,6 +7,16 @@
 - Energy quantization is a fundamental principle of our physical reality, consistently observed in quantum experiments. Quantum mechanics provides a comprehensive explanation and accurate predictions of this phenomenon.
 - Key historical developments leading to the emergence of quantum mechanics include **black body radiation, the double slit experiment, and the photoelectric effect**.
 - Several macroscopic phenomena, such as the red glow of hot metals, the heat capacity of solids at low temperatures, and the colors of materials, are all manifestations of quantum effects.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 原子、分子和光的能量是**量子化的**。这意味着能量只能取特定的**离散值**，而不能是连续的范围。
+- 能量量子化是物理现实的基本原理，在量子实验中始终得到观测。量子力学提供了对这一现象的全面解释和准确的预测。
+- 导致量子力学出现的关键历史发展包括**黑体辐射、双缝实验和光电效应**。
+- 几种宏观现象，如热金属的红光、低温固体的比热容以及材料的颜色，都是量子效应的表现。
+``````
 :::
 
 ## What is the nature of light?
@@ -17,11 +27,26 @@
 :width: 300px
 
 Electromagnetic radiation has perpendicular electric and magnetic components that propagate at the speed of light. Unlike other waves (water, sound), light needs no medium and can travel in vacuum.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+电磁辐射具有垂直于传播方向的电场和磁场成分，以光速传播。与其他波（水波、声波）不同，光不需要介质，可以在真空中传播。
+``````
 :::
 
 
 - According to classical wave theory, light is seen as a traveling wave consisting of electric and magnetic components. 
 - We will soon see that this picture of light as an electromagnetic wave is not the whole story, and radically new ideas are needed to understand a wide variety of phenomena involving the interaction of light with atoms and molecules.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 根据经典波动理论，光被视为由电场和磁场分量组成的行波。
+- 我们很快会看到，光作为电磁波的图像并非全部故事，理解光与原子和分子相互作用的各类现象需要全新的理念。
+``````
 
 ### Spectrum of electromagnetic waves
 
@@ -32,6 +57,13 @@ Electromagnetic radiation has perpendicular electric and magnetic components tha
 :width: 80%
 
 Spectrum of electromagnetic waves showing wavelengths and radiation types, objects whose size is comparable to each wavelength, and the temperatures of objects that radiate at those wavelengths. Note the clear link between how "hot" an object is and how much energy its radiation contains.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+显示电磁波波长和辐射类型、与每个波长大小相当的物体，以及在该波长下辐射的物体温度的光谱。注意物体“热”程度与其辐射能量之间的明确联系。
+``````
 :::
 
 - **Visible light** occupies a narrow frequency region in between. 
@@ -40,6 +72,16 @@ Spectrum of electromagnetic waves showing wavelengths and radiation types, objec
 
 
 - So what is the relationship between the frequency of radiation $\nu$ and its energy $E$? This is not such a trivial question. In fact, this very question arose in connection with black body radiation, an experiment that forever changed the course of history by giving birth to quantum mechanics! 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **可见光** 占据了中间一个狭窄的频率区域。
+- **高频波载有更高的能量。** 这意味着只有将物质加热到非常高的温度，才能产生X射线或伽马射线。这自然发生在太阳的核心！
+- **低频波携带的能量较少。** 它们可以在“微波炉”中产生，或由广播天线产生。
+- 那么，辐射频率 $\nu$ 与其能量 $E$ 之间有什么关系？这并非一个 trivial 的问题。事实上，这个问题正是在黑体辐射实验中产生的，这一实验永远地改变了历史的进程，诞生了量子力学！
+``````
 
 
 ### Relationship between frequency, wavelength and speed of light. 
@@ -51,6 +93,13 @@ Spectrum of electromagnetic waves showing wavelengths and radiation types, objec
 :width: 80%
 
 Definitions of wavelength $\lambda$, amplitude, and frequency $\nu$. At fixed speed $c$ a wave with twice the frequency has half the wavelength.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+波长 $\lambda$、振幅和频率 $\nu$ 的定义。在固定速度 $c$ 下，频率加倍的波，其波长减半。
+``````
 :::
 
 
@@ -61,6 +110,15 @@ Definitions of wavelength $\lambda$, amplitude, and frequency $\nu$. At fixed sp
  - **Speed of light in vacuum**, $c=3 \cdot 10^8 m/s$, is a fundamental constant.
  - **Frequency**, $1 Hz =  1 s^{-1}$, is the number of wave cycles that pass a point in 1 second.
  - **Wavelength**, $1 m$, is the distance between successive peaks of the wave.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **真空中的光速**，$c=3 \cdot 10^8 m/s$，是一个基本常数。
+- **频率**，$1 Hz =  1 s^{-1}$，是指在 1 秒内通过某一点的波周期数。
+- **波长**，$1 m$，是波的相邻波峰之间的距离。
+``````
 :::
 
 
@@ -73,11 +131,25 @@ Definitions of wavelength $\lambda$, amplitude, and frequency $\nu$. At fixed sp
 :width: 70%
 
 A guide to black body radiation from PhD Comics.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+来自 PhD Comics 的黑体辐射指南。
+``````
 :::
 
 ---
 
 - Watch this beautiful animation; the first 3 minutes focus solely on blackbody radiation.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 观看这个精美的动画；前 3 分钟专门聚焦于黑体辐射。
+``````
 
 <div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uG4xe9cNpP0?si=WwWocuEyIXdI72CD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -96,6 +168,17 @@ A guide to black body radiation from PhD Comics.
 - Max Planck, a theorist in Berlin who had been working on the problem for years, learned of the new infrared results from Rubens on a Sunday in October 1900 and found an interpolation formula that fit everything, the law we now call Planck's law, within the day [@hoffmann2026planck]. He then spent weeks searching for a derivation, and in December 1900 presented the only one that worked: the oscillators exchange energy in packets $E = h\nu$. He later called it "an act of desperation."
 - Planck did not set out to overthrow classical physics; he wanted a formula for lamp engineers. Quantum mechanics is a by-product of the search for a better light bulb.
 - The whole story, with the people and the instruments, is told in [this video](https://www.youtube.com/watch?v=i1TVZIBj7UA).
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 1887 年，威尔姆·冯·西门斯和赫尔曼·冯·赫尔姆霍茨在柏林创立了 **物理技术研究所** (PTR)，世界上第一个国家计量研究所，其任务是为德国工业提供可靠的标准 [@gonzalez2022rubens]。其中一个紧迫的客户是新兴的 **电光业务**：要对灯泡进行评级，必须知道发光丝每瓦特输出多少光，以及这如何随温度变化。这正是黑体问题。
+- 1890 年代，Lummer、Pringsheim、Rubens 和 Kurlbaum 的 PTR 实验者建造了腔体辐射体并以前所未有的精度测量发射光谱，深入红外区域 [@gonzalez2022rubens]。1900 年，他们的数据表明，现有的最佳公式威克公式，**在长波长下失效**。
+- 柏林理论家马克斯·普朗克多年致力于这一问题，他于1900年10月的周日从伦布斯那里得知了新的红外结果，并找到了一个插值公式，完美匹配所有数据，即我们现在称为普朗克定律，仅用一天的时间 [@hoffmann2026planck]。随后他花了数周时间寻找一个推导过程，并于1900年12月提出了唯一一个奏效的推导：振荡器以包 $E = h\nu$ 的形式交换能量。他后来将其称为“绝望的行为”。
+- 普朗克并非想要推翻经典物理；他想找一个给灯工程师的公式。量子力学是寻找更好电灯过程中的副产品。
+- 完整的故事，包括人物和仪器，都在 [这个视频](https://www.youtube.com/watch?v=i1TVZIBj7UA) 中讲述。
+``````
 :::
 
 ### Black body as an idealized model 
@@ -103,10 +186,25 @@ A guide to black body radiation from PhD Comics.
 :::{tip} **Definition of black body**
 
 A black body is an idealized model, just like the ideal gas model in thermodynamics. It is assumed to be in thermodynamic equilibrium, maintained at some constant temperature $T$, and it both absorbs and emits every wavelength of electromagnetic radiation. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+黑体是一种理想化模型，类似于热力学中的理想气体模型。假设它处于热力学平衡，保持在某个恒定温度 $T$，且它既吸收又发射所有波长的电磁辐射。
+``````
 :::
 
 - This model is called a black body because it absorbs every wavelength that hits its surface, therefore appearing as a perfectly black object. 
 - If an object has a color, it is because it reflects certain wavelengths of light, which are then detected by the retina of our eye. The distribution of wavelengths emitted by a black body is determined only by its temperature!
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 这种模型被称为黑体，因为它吸收所有照射到其表面的波长，因此呈现为一个完美的黑色物体。
+- 如果物体有颜色，是因为它反射了某些波长的光，这些光随后被我们眼睛的视网膜探测到。黑体发射的波长分布仅由其温度决定！
+``````
 
 ::::{tab-set}
 :::{tab-item} vs wavelength
@@ -143,9 +241,23 @@ The same spectra plotted against frequency, $\rho_\nu$ with $\nu = c/\lambda$. T
 :width: 50%
 
 Predictions of classical and quantum mechanics diverge in the high-frequency (short-wavelength) limit: classical mechanics predicts infinite energy, while quantum mechanics predicts insufficient thermal energy for radiation.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在高频（短波长）极限下，经典力学和量子力学的预测背道而驰：经典力学预测无限能量，而量子力学预测辐射的热能不足。
+``````
 :::
 
 - **What is radiation in classical mechanics?** Radiation is considered a wave with frequency $\nu$. In a heated body, naturally vibrating springs (which represent atoms or molecules) generate waves with the same frequency.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **经典力学中的辐射是什么？** 辐射被视为具有频率 $\nu$ 的波。在加热的体体中，自然振动的弹簧（代表原子或分子）产生的波具有相同的频率。
+``````
 
 :::{important} **The recipe for a radiation spectrum**
 
@@ -154,6 +266,15 @@ $$\rho_{\nu}(T)\, d\nu = \underbrace{\langle E \rangle}_{\text{energy per mode}}
 - A **mode** is one standing wave that fits in the cavity, like one harmonic of a guitar string; each mode has its own frequency. The energy stored in radiation at frequency $\nu$ is the energy each mode of that frequency carries on average, times the number of such modes: $\langle E \rangle$ is the average energy of one wave mode at temperature $T$, and $dN_{\nu}$ is the number of modes per volume with frequency in $[\nu, \nu + d\nu]$.
 - The **average mode energy** $\langle E \rangle$ is **thermodynamics**: what the waves are and how much energy each holds. It is where classical and quantum physics part ways.
 - The **number of modes** $dN_{\nu}$ is pure **geometry**: how many standing waves fit in a box. It is the same in classical and quantum physics. Everything that follows is about these two ingredients, in that order.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 一个**模式**是驻波在腔体中适配的一种，如吉他弦的一个谐波；每个模式有自己的频率。频率为 $\nu$ 的辐射存储能量是该频率每个模式平均携带的能量，乘以这样的模式数量：$\langle E \rangle$ 是温度 $T$ 下单个波模式的平均能量，$dN_{\nu}$ 是频率在 $[\nu, \nu + d\nu]$ 区间内每体积的模式数。
+- **平均模式能量** $\langle E \rangle$ 是**热力学**的问题：波是什么以及每种波携带多少能量。这是经典物理和量子物理分道扬镳的地方。
+- 模的**数量** $dN_{\nu}$ 纯粹是**几何**问题：有多少驻波能放入一个盒子中。在经典物理和量子物理中它是相同的。接下来的一切都关于这两个因素，按此顺序。
+``````
 :::
 
 :::{figure} ./images/phonons.gif
@@ -162,15 +283,37 @@ $$\rho_{\nu}(T)\, d\nu = \underbrace{\langle E \rangle}_{\text{energy per mode}}
 :width: 60%
 
 Visualization of atomic vibrations in a solid body. These vibrational modes are called phonons, not to be confused with the photons introduced in the next section. Each mode is one of the dots counted above.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+固体中原子振动的可视化。这些振动模式称为声子，不可与下一节介绍的光子混淆。每种模式都是上述计数的点之一。
+``````
 :::
 
  - **Average mode energy, the classical way: equipartition.** From thermodynamics we know that in equilibrium each degree of freedom, or each oscillator, gets the same energy $k_BT$, where $k_B$ is the Boltzmann constant. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **平均模式能量，经典方式：等分定律。** 从热力学我们知道，在平衡状态下，每个自由度或每个谐振子获得相同的能量 $k_BT$，其中 $k_B$ 为玻尔兹曼常数。
+``````
 
   $$\langle E\rangle = k_BT$$
 
  -  Every vibrating spring in a heated body thus has the same energy regardless of frequency. Think about this assumption for a second!
 
 - **Number of modes in one breath.** Shorter waves fit into a box of length $L$ more easily than long ones: the number that fit grows as $L/\lambda \sim \nu$ in one dimension, and in three dimensions the wave has to fit along each direction independently, so the count grows as $\nu^3$. The number of modes in a thin frequency slice is therefore $dN \sim d(\nu^3) \sim \nu^2 d\nu$. The box below fills in the details on this calculation.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 因此，加热物体中的每一个振动弹簧都具有相同的能量，与频率无关。请仔细思考一下这个假设！
+- **一口气中的模式数量。** 较短的波长比长的更容易装入长度为 $L$ 的盒子中：一维中能装入的数量增长率为 $L/\lambda \sim \nu$；三维中波必须沿每个方向独立适配，因此计数增长率为 $\nu^3$。频带内的模式数量因此为 $dN \sim d(\nu^3) \sim \nu^2 d\nu$。下面的盒子详细介绍了这一计算。
+``````
 
 :::{tip} **Counting the number of modes in a box**
 :class: dropdown
@@ -186,9 +329,26 @@ A wave trapped between two walls must vanish at each wall, so only a whole numbe
 - **Shorter waves fit more easily.** Since $\nu = c/\lambda$, the allowed frequencies are $\nu_n = n\,c/2L$. Counting all the waves that fit with frequency up to $\nu$ (wavelength down to $\lambda$) gives $N(\nu) = 2L\nu/c = 2L/\lambda$: the count grows in proportion to $\nu$, in inverse proportion to $\lambda$, and in proportion to the size of the box.
 - **Two and three dimensions.** In a square box the wave must fit along $x$ and along $y$ separately, so a mode needs two integers $(n_x, n_y)$; in a cube it needs three. The frequency of a mode is set by the distance of the point $(n_x, n_y, n_z)$ from the origin, $\nu = \frac{c}{2L}\sqrt{n_x^2 + n_y^2 + n_z^2}$, so the modes with frequency below $\nu$ are the grid points inside a sphere of radius $2L\nu/c$. Their number grows like the size of that region: $N(\nu) \propto \nu$ in one dimension (a line), $\propto \nu^2$ in two (a quarter disk), $\propto \nu^3$ in three (an octant of a sphere).
 - **A thin slice.** The modes between $\nu$ and $\nu + d\nu$ form a thin spherical shell whose volume is surface times thickness, $dN \propto \nu^2\, d\nu$. This is all that "more short waves than long waves fit in a box" means.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **Where the integers come from.** A wave trapped between two walls has to vanish at both walls, like a guitar string pinned at its ends. That is only possible if a whole number of half-wavelengths spans the box, $L = n\,\lambda/2$，所以允许的波长为 $\lambda_n = 2L/n$ 与 $n = 1, 2, 3, \ldots$ 整数 $n$ 仅仅是能够容纳的半波的数量。
+- **波长越短，越容易排列。** 由于 $\nu = c/\lambda$，允许的频率为 $\nu_n = n\,c/2L$。计算频率不超过 $\nu$（波长不小于 $\lambda$）的所有波的数目得到 $N(\nu) = 2L\nu/c = 2L/\lambda$：计数与 $\nu$ 成正比，与 $\lambda$ 成反比，与盒子的大小成正比。
+- **两和三维度。** 在方形盒子中，波必须沿 $x$ 和 $y$ 方向分别适配，因此一个模式需要两个整数 $(n_x, n_y)$；在立方体中需要三个。模式的频率由点 $(n_x, n_y, n_z)$ 到原点的距离决定，$\nu = \frac{c}{2L}\sqrt{n_x^2 + n_y^2 + n_z^2}$，因此频率低于 $\nu$ 的模式是半径为 $2L\nu/c$ 的球体内的网格点。它们的数量随着该区域的大小增长：$N(\nu) \propto \nu$ 在一维（线性），$\propto \nu^2$ 在二维（四分之一个圆盘），$\propto \nu^3$ 在三维（球体八分之一）。
+- **一薄片。** $\nu$ 到 $\nu + d\nu$ 之间的模式形成一个薄球壳，其体积为面积乘以厚度，$dN \propto \nu^2\, d\nu$。这就是“短波长比长波长更容易在盒子里适配”的意思。
+``````
 :::
 
 - **Result of the counting.** Keeping track of the constants (two polarizations of light, only positive integers, so one octant of the sphere, and division by the box volume $L^3$) gives the number of modes per unit volume in $[\nu, \nu+d\nu]$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **计数的结果。** 记录常数（光的两种偏振，仅正整数，所以球体的八分之一，以及除以盒体积 $L^3$）得到每单位体积在 $[\nu, \nu+d\nu]$ 范围内的模式数：
+``````
 
 $$
 dN_{\nu} = \frac{8\pi}{c^3} \cdot \nu^2 d\nu
@@ -196,15 +356,36 @@ $$
 
 - **Radiation energy distribution.** Putting the two factors of the recipe together, $k_BT$ per mode times modes per volume, gives the classical **Rayleigh-Jeans law**:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **辐射能量分布.** 将两个配方因子相乘，每模式 $k_BT$ 与每体积模式数，得到经典 **Rayleigh-Jeans 定律**:
+``````
+
 $$\rho({\nu}) = \frac{8\pi}{c^3}\nu^2 \cdot k_B T$$
 
 - **Ultraviolet catastrophe.** The energy distribution shoots to infinity at high $\nu$ (or low $\lambda$). This is known as the ultraviolet catastrophe! Integrating $\rho$ over all frequencies gives the total amount of radiation, which in this case is infinite. A light bulb could destroy the universe! Something is off with our classical prediction.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **紫外灾难。** 能量分布在高 $\nu$（或低 $\lambda$）时无限增长。这就是著名的紫外灾难！对所有频率积分 $\rho$ 得到的总辐射量在这种情况下是无限的。灯泡可能会毁灭宇宙！我们的经典预测出了问题。
+``````
 
 
 
 ### Max Planck and the trick of quantization 
 
 - In 1900 Planck found that the theoretical curve can very closely match the experimental curve if one postulates that only discrete (quantized) values of energy are possible.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 1900 年，普朗克发现，如果假设能量只有离散（量子化）可能值，理论曲线可以非常接近实验曲线。
+``````
 
 :::{important} Planck equation
 
@@ -213,6 +394,15 @@ $$\boxed{E= h\nu}$$
 - Planck's constant, $h = 6.63 \cdot 10^{-34} \, \text{J} \cdot \text{s}$
 - Frequency $\nu$, $1\, \text{s}^{-1}$.
 - Energy $E$, $1\, \text{J}$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 普朗克常数，$h = 6.63 \cdot 10^{-34} \, \text{J} \cdot \text{s}$
+- 频率 $\nu$, $1\, \text{s}^{-1}$.
+- 能量 $E$，$1\, \text{J}$。
+``````
 :::
 
 - This means atoms and molecules absorb and emit radiation in discrete quantities, multiples of $h\nu$, which are called quanta!
@@ -220,6 +410,15 @@ $$\boxed{E= h\nu}$$
 - When light is emitted or absorbed, the atom or molecule jumps from one state to another and the energy difference $h\nu$ is either coming from light or is used to generate light.
 
 - Note how small $h$ is in the macroscopic units (such as J s). This is why quantization of energy is hardly noticeable and classical mechanics works so well at the macro scale. In the limit $h \rightarrow 0$, $E$ becomes continuous, and an arbitrary real value of E is allowed. This is the classical limit.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 这意味着原子和分子以离散的量吸收和发射辐射，即 $h\nu$ 的整数倍，称为量子！
+- 当光发射或吸收时，原子或分子从一个态跳到另一个态，能量差 $h\nu$ 要么来自光，要么用于产生光。
+- 注意 $h$ 在宏观单位（如 J s）中有多小。这就是为什么能量的量子化在宏观尺度上几乎不可见，经典力学在那样的尺度上运行得如此良好。在极限 $h \rightarrow 0$ 下，$E$ 变得连续，允许任意实值的 $E$。这就是经典极限。
+``````
 
 
 
@@ -231,21 +430,57 @@ $$\boxed{E= h\nu}$$
 
 Planck hypothesized that the energy of oscillators in a black body is quantized and given by:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+普朗克假设黑体中的振子能量是量子化的，由下式给出：
+``````
+
 $$E_n = n h \nu$$
 
 where $n = 0, 1, 2, \ldots$ is a non-negative integer, $h$ is Planck's constant, and $\nu$ is the frequency. (Planck's 1900 oscillators start at zero energy; the extra $\tfrac{1}{2}h\nu$ of zero-point energy is a later result of full quantum mechanics that we will meet with the harmonic oscillator.)
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+其中 $n = 0, 1, 2, \ldots$ 是一个非负整数，$h$ 是普朗克常数，$\nu$ 是频率。 (普朗克 1900 年的谐振子从零能量开始；零点能的额外 $\tfrac{1}{2}h\nu$ 是完整量子力学的后续结果，我们将在谐振子部分遇到。)
+``````
+
 The average energy of an oscillator is found by summing over all possible energies, weighted by the Boltzmann factor:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+振子的平均能量通过对所有可能能量求和来求得，权重为玻尔兹曼因子：
+``````
 
 $$\langle E \rangle = \frac{\sum_n E_n e^{-E_n/kT}}{\sum_n e^{-E_n/kT}}$$
 
 Substituting $E_n = n h \nu$, the sum becomes:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+代入 $E_n = n h \nu$，求和变为：
+``````
 
 $$\langle E \rangle = \frac{\sum_n n h \nu e^{-n h \nu / kT}}{\sum_n e^{-n h \nu / kT}}$$
 
 
 This sum is a geometric series. 
 For the geometric series of the form:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这个求和是一个等比级数。
+对于如下形式的等比级数：
+``````
 
 $$ S = \sum_{n=0}^{\infty} x^n $$
 
@@ -255,6 +490,13 @@ $$ S = \frac{1}{1 - x} \quad \text{for} \quad |x| < 1 $$
 
 In the context of Planck's derivation, we use the series:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在普朗克的推导背景下，我们使用以下级数：
+``````
+
 $$ \sum_{n=0}^{\infty} e^{-n h \nu / kT} $$
 
 This series can be summed as:
@@ -263,34 +505,90 @@ $$ \sum_{n=0}^{\infty} e^{-n h \nu / kT} = \frac{1}{1 - e^{-h \nu / kT}} $$
 
 The series involving $n$ in the numerator is:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+分子含 $n$ 的级数为：
+``````
+
 $$ \sum_{n=0}^{\infty} n e^{-n h \nu / kT} $$
 
 This can be evaluated using the derivative with respect to $x$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这可以用对 $x$ 的导数来计算：
+``````
 
 $$ \sum_{n=0}^{\infty} n x^n = x \frac{d}{dx} \left( \frac{1}{1 - x} \right) = \frac{x}{(1 - x)^2} $$
 
 Substituting $x = e^{-h \nu / kT}$, we get:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+令 $x = e^{-h \nu / kT}$，可得：
+``````
+
 $$ \sum_{n=0}^{\infty} n e^{-n h \nu / kT} = \frac{e^{-h \nu / kT}}{(1 - e^{-h \nu / kT})^2} $$
 
 Using these results, Planck's formula for the average energy becomes:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+利用这些结果，普朗克的平均能量公式变为：
+``````
 
 $$ \langle E \rangle = \frac{h \nu}{e^{h \nu / kT} - 1} $$
 
 
 The energy density $\rho(\nu, T)$ is then obtained by multiplying the average energy by the density of states and the number of oscillators per unit volume:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+能量密度 $\rho(\nu, T)$ 通过将平均能量乘以态密度和单位体积内的振子数得到：
+``````
+
 $$\rho(\nu, T) = \frac{8 \pi \nu^2}{c^3} \cdot \frac{h \nu}{e^{h \nu / kT} - 1}$$
 
 This is Planck's law, which describes the spectral density of radiation emitted by a black body in thermal equilibrium at a temperature $T$.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+这是普朗克定律，描述了处于温度 $T$ 热平衡状态下黑体辐射的谱能量密度。
+``````
 
 :::
 
 - Planck kept the number of modes untouched. Assuming that the energy of an oscillator is quantized, he derived a new **average mode energy** which, unlike the classical $k_BT$, depends on the frequency of oscillation:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 普朗克保持模式数不变。假设谐振子的能量量子化，他推导出了新的**平均模式能量**，它不同于经典的 $k_BT$，后者取决于振动频率：
+``````
+
 $$\langle E \rangle = \Big[ \frac{h\nu}{e^{\frac{h\nu}{ kT}} - 1}\Big] $$
 
 - Modes per volume times this average energy gives **Planck's law**, a distribution that tends to zero in the high-frequency limit because the exponential in the average energy wins over the $\nu^2$ of the mode count. The same law can be written per unit frequency or per unit wavelength (substitute $\nu = c/\lambda$ and $d\nu = c\,d\lambda/\lambda^2$):
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 每个体积的模式乘以这平均能量给出 **普朗克定律**，一种在高频极限下趋于零的分布，因为平均能量中的指数战胜了模式计数中的 $\nu^2$。同样的定律可以按频率单位或波长单位写出（代入 $\nu = c/\lambda$ 和 $d\nu = c\,d\lambda/\lambda^2$）：
+``````
 
 ::::{tab-set}
 :::{tab-item} per unit frequency
@@ -308,9 +606,23 @@ $$ \rho_{\lambda}(T) = \frac{8 \pi hc}{\lambda^5} \cdot \Big[ \frac{1}{e^{\frac{
 
 - The expressions $\rho_{\lambda}(T)d\lambda$ and $\rho_{\nu}(T)d\nu$ have units of energy per volume, which is why they are often referred to as the **energy density** of radiation. By integrating over the entire spectrum (e.g., all frequencies or wavelengths) we obtain the total energy of radiation per volume!
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 表达式 $\rho_{\lambda}(T)d\lambda$ 和 $\rho_{\nu}(T)d\nu$ 的单位是每体积能量，因此它们常被称为**辐射能量密度**。通过对整个光谱积分（例如所有频率或波长），我们得到每体积的辐射总能量！
+``````
+
 $$\int^{\infty}_0 \rho_{\nu}(T)d\nu = \frac{4\sigma}{c} T^4 $$
 
 - The power radiated per unit surface area of the black body is the more familiar **Stefan-Boltzmann law**, $P/A = \sigma T^4$, where $\sigma=5.67 \cdot 10^{-8}\, \text{W m}^{-2} \text{K}^{-4}$ is the Stefan-Boltzmann constant. Doubling the temperature increases the radiated power sixteenfold. Try it: the shaded area below is the integral, and the readout compares it with the area at 3000 K.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 每个黑体表面积辐射的功率更熟悉的**斯蒂芬-玻尔兹曼定律**，$P/A = \sigma T^4$，其中 $\sigma=5.67 \cdot 10^{-8}\, \text{W m}^{-2} \text{K}^{-4}$ 是斯蒂芬-玻尔兹曼常数。温度翻倍使辐射功率增加十六倍。试一试：下面阴影区域是积分，读数将其与 3000 K 时的面积进行比较。
+``````
 
 ```{marimo-config}
 ---
@@ -379,6 +691,14 @@ mo.md(f"Temperature ratio {T_area.value / T_ref:.2f}, so $T^4$ predicts **{(T_ar
 
 - This relationship is described by Wien's displacement law. You can derive it by setting the derivative $d\rho(\lambda)/d\lambda=0$, which gives the wavelength at the peak of the distribution.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **将黑体温度与波长或频率相连接。** 能量密度在波长 $\lambda_{max}$ 处达到峰值，且该波长与温度成反比。
+- 该关系由 Wien 的位移定律描述。通过令导数 $d\rho(\lambda)/d\lambda=0$ 得到分布峰值对应的波长。
+``````
+
 :::{important} **Wien's displacement law**
 
 $$\lambda_{max} = \frac{b}{T}$$
@@ -386,11 +706,26 @@ $$\lambda_{max} = \frac{b}{T}$$
 - $ b=2.8977729 \cdot 10^{-3} m·K$.  
 - This is an approximate relation connecting the temperature $T$ of an object to its color, quantified by $\lambda_{max}$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- $ b=2.8977729 \cdot 10^{-3} m·K$.
+- 这是一个将物体温度 $T$ 与其颜色（用 $\lambda_{max}$ 量化）联系起来的近似关系。
+``````
+
 :::
 
 ### Explore black body radiation
 
 Drag the temperature and watch three things at once: the Planck curve (solid) rises and its peak slides to shorter wavelengths, following Wien's law; the visible band lights up only above a few thousand kelvin; and the classical Rayleigh-Jeans prediction (dashed) agrees with Planck at long wavelengths but shoots off the top of the plot at short ones. That divergence is the ultraviolet catastrophe.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+拖动温度，同时观察三件事：普朗克曲线（实线）上升，其峰值向短波长方向移动，符合 Wien 定律；可见带仅在几千开尔文以上亮起；而经典的瑞利-金斯预测（虚线）在长波长处与普朗克一致，但在短波长处偏离图表顶部。这种偏差就是紫外灾难。
+``````
 
 ```{marimo} python
 :hide-code: true
@@ -431,6 +766,13 @@ fig1
 :width: 80%
 
 The black body is used as a standard against which the absorption of real bodies is compared. To a good approximation, stars radiate like black bodies, so we can use blackbody radiation as a model to infer the temperatures of stars from their colors. Find out more in this video on [Visible Light Waves](https://www.youtube.com/watch?v=PMtC34pzKGc).
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+黑体用作与实际体吸收相比的标准。大约来说，恒星像黑体辐射一样辐射，所以我们可以用黑体辐射作为模型，从恒星的颜色推断其温度。在这段关于 [Visible Light Waves](https://www.youtube.com/watch?v=PMtC34pzKGc) 的视频中了解更多。
+``````
 :::
 
 ### Rayleigh Scattering and the Color of the Sky
@@ -438,10 +780,32 @@ The black body is used as a standard against which the absorption of real bodies
 :::{tip} **Rayleigh Scattering**
 
 When light passes through Earth’s atmosphere, it interacts with gas molecules that are much smaller than the wavelength of visible light.  
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+当光穿过地球大气层时，它与比可见光波长小得多的气体分子相互作用。
+``````
 - The scattering intensity is proportional to $1/\lambda^4$, meaning shorter wavelengths (blue/violet) are scattered much more strongly than longer wavelengths (red).  
 - Ultraviolet light is mostly absorbed by the ozone layer, and the human eye is less sensitive to violet than to blue.  
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 散射强度与 $1/\lambda^4$ 成正比，这意味着较短波长（蓝/紫）散射的强度远比较长波长（红）强。
+- 紫外线大多被臭氧层吸收，且人眼对紫光的敏感度低于蓝光。
+``````
+
 As a result, the scattered light that fills the sky appears predominantly **blue**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+因此，充满天空的散射光呈现以 **蓝色** 为主。
+``````
 :::
 
 :::{figure} ./images/BlueSky.png
@@ -450,6 +814,13 @@ As a result, the scattered light that fills the sky appears predominantly **blue
 :width: 70%
 
 Preferential scattering of shorter wavelengths biases the color of the sky toward blue.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+较短波长的优先散射使天空的颜色偏向蓝色。
+``````
 :::
 
 ### Problems
@@ -458,21 +829,59 @@ Preferential scattering of shorter wavelengths biases the color of the sky towar
 
 If hotter objects radiate more strongly at shorter wavelengths, why does the **daytime sky appear blue** instead of violet (or even ultraviolet)?
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+如果更热的物体在更短波长处辐射更强烈，为什么**白天的天空呈现蓝色**而不是紫色（甚至紫外线）？
+``````
+
 :::{admonition} **Solution**
 :class: dropdown solution
 
 The Sun’s spectrum indeed peaks in the green/yellow (≈500 nm), and it emits significant violet and ultraviolet.  
 However:  
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+太阳的光谱确实在绿/黄光区域（≈500 nm）达到峰值，并且发射大量紫光和紫外线。  
+然而：
+``````
 - **Rayleigh scattering** in the atmosphere is much stronger at shorter wavelengths (scattering $\sim 1/\lambda^4$).  
 - Human eyes are **more sensitive to blue** than violet.  
 - Most ultraviolet is absorbed by the ozone layer.  
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 大气中的**瑞利散射**在较短波长处强得多（散射 $\sim 1/\lambda^4$)。
+- 人眼对**蓝色**比对紫色更敏感。
+- 大部分紫外线被臭氧层吸收。
+``````
+
 Thus, the scattered light that reaches us is predominantly **blue**.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+因此，到达我们这里的散射光主要是 **蓝色** 的。
+``````
 :::
 
 #### Problem 2: Color of a 3000 K black body
 
 A blackbody has temperature $T = 3000 \,\text{K}$. According to Wien's law, what is the approximate color of its peak emission?
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+一个黑体的温度为 $T = 3000 \,\text{K}$。根据维恩定律，其峰值发射的近似颜色是什么？
+``````
 
 1. Red/Orange
 2. Green
@@ -484,25 +893,63 @@ A blackbody has temperature $T = 3000 \,\text{K}$. According to Wien's law, what
 
 Using $\lambda_{\max} = \dfrac{2.898 \times 10^{-3}}{3000} \approx 9.7 \times 10^{-7}\,\text{m} = 970 \,\text{nm}$, the peak is in the **infrared**, but the visible portion is dominated by the **red/orange** end.  
 **Correct choice: (1) Red/Orange.**
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+Using $\lambda_{\max} = \dfrac{2.898 \times 10^{-3}}{3000} \approx 9.7 \times 10^{-7}\,\text{m} = 970 \,\text{nm}$，峰值位于 **红外**，但可见光部分由 **红/橙** 端主导。  
+**正确选择: (1) 红/橙**.
+``````
 :::
 
 #### Problem 3: Wavelength from photon energy
 
 For a monochromatic (single wavelength) radiation with an energy of $3.5 \, \text{eV}$ calculate the wavelength. Use Planck's equation to relate the energy of radiation to its wavelength. The values of constants are:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于单一波长的单色辐射，能量为 $3.5 \, \text{eV}$，计算波长。使用普朗克方程将辐射能量与其波长相关联。常数值为：
+``````
 - Planck's constant, $h = 6.626 \times 10^{-34} \, \text{J} \cdot \text{s}$
 - Speed of light, $c = 3.00 \times 10^8 \, \text{m/s}$
 - $1 \, \text{eV} = 1.602 \times 10^{-19} \, \text{J}$
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 普朗克常数，$h = 6.626 \times 10^{-34} \, \text{J} \cdot \text{s}$
+- 光速，$c = 3.00 \times 10^8 \, \text{m/s}$
+- $1 \, \text{eV} = 1.602 \times 10^{-19} \, \text{J}$
+``````
 
 :::{admonition} **Solution**
 :class: dropdown solution
 
 First, convert the energy of the radiation from electron volts (eV) to joules (J):
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+首先，将辐射的能量从电子伏特 (eV) 转换为焦耳 (J)：
+``````
+
 $$
 E = 3.5 \, \text{eV} \times 1.602 \times 10^{-19} \, \text{J/eV} = 5.607 \times 10^{-19} \, \text{J}
 $$
 
 Now, use Planck's equation to relate the energy $E$ of the photon to its wavelength $\lambda$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+现在，利用普朗克方程将光子的能量 $E$ 与其波长 $\lambda$ 联系起来：
+``````
 
 $$
 E = \frac{hc}{\lambda}
@@ -525,22 +972,50 @@ $$
 $$
 
 The wavelength of the radiation is approximately $355 \, \text{nm}$, which is in the ultraviolet range of the electromagnetic spectrum.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+辐射的波长约为 $355 \, \text{nm}$，处于电磁波谱的紫外线范围内。
+``````
 :::
 
 #### Problem 4: Peak of the solar spectrum
 
 Using Wien's displacement law, determine the wavelength $\lambda_{\text{max}}$ at which the spectral radiance of a blackbody is maximized. Calculate $\lambda_{\text{max}}$ for $T = 5800 \, \text{K}$, approximately the temperature of the Sun's surface.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+使用 Wien 位移定律，确定黑体谱辐射度最大的波长 $\lambda_{\text{max}}$。计算 $T = 5800 \, \text{K}$ 时的 $\lambda_{\text{max}}$，这大约是太阳表面的温度。
+``````
+
 :::{admonition} **Solution**
 :class: dropdown solution
 
 Wien's displacement law states that the wavelength at which the spectral radiance of a blackbody peaks is inversely proportional to the temperature:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+维恩位移定律指出，黑体光谱辐射亮度达到峰值的波长与温度成反比：
+``````
 
 $$
 \lambda_{\text{max}} = \frac{b}{T}
 $$
 
 where $b = 2.897 \times 10^{-3} \, \text{m} \cdot \text{K}$ is Wien's displacement constant.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+其中 $b = 2.897 \times 10^{-3} \, \text{m} \cdot \text{K}$ 为维恩位移常数。
+``````
 
 For $T = 5800 \, \text{K}$:
 
@@ -549,23 +1024,58 @@ $$
 $$
 
 So, the peak wavelength $\lambda_{\text{max}}$ for a blackbody at $5800 \, \text{K}$ is $500 \, \text{nm}$, which is in the visible range.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+所以，黑体在 $5800 \, \text{K}$ 下的峰波长 $\lambda_{\text{max}}$ 为 $500 \, \text{nm}$，位于可见光范围。
+``````
 :::
 
 #### Problem 5: Star colors as thermometers
 
 Betelgeuse looks distinctly red, Rigel blue-white. Their spectra peak near 830 nm and 240 nm respectively. Estimate the surface temperature of each star. Which of the two radiates more power per square meter of surface, and by what factor?
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+参贝图斯看起来明显发红，参吉尔呈蓝白色。它们的光谱峰分别接近 830 nm 和 240 nm。估计每颗恒星的表面温度。其中哪一颗每平方米表面辐射功率更大，以及多出多少倍？
+``````
+
 #### Problem 6: Counting photons
 
 A red laser pointer emits 1.0 mW at 650 nm. How many photons leave it per second? Compare with the number of photons per second in a 1.0 mW beam of X-rays with wavelength 0.10 nm. In which beam is the "graininess" of light easier to detect?
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+红色激光指示器每秒发射 1.0 mW，波长 650 nm。每秒发射多少光子？与 1.0 mW 波长为 0.10 nm 的 X 射线束中的光子每秒数量进行比较。在哪个光束中光的“颗粒感”更易于探测？
+``````
 
 #### Problem 7: Where the classical formula hides inside Planck's
 
 Expand $e^{h\nu/k_BT}$ for $h\nu \ll k_BT$ and show that Planck's average oscillator energy $\langle E \rangle = h\nu/(e^{h\nu/k_BT}-1)$ reduces to the classical equipartition value $k_BT$. Then examine the opposite limit, $h\nu \gg k_BT$, and show that the average energy dies off exponentially. Explain in one sentence why this second limit is what cures the ultraviolet catastrophe.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在 $h\nu \ll k_BT$ 的条件下展开 $e^{h\nu/k_BT}$，并证明普朗克平均振子能量 $\langle E \rangle = h\nu/(e^{h\nu/k_BT}-1)$ 简化为经典分配定则值 $k_BT$。然后考察相反极限 $h\nu \gg k_BT$，并证明平均能量呈指数衰减。用一句话解释为什么这个第二极限是解决紫外灾难的关键。
+``````
+
 #### Problem 8: The Sun's power output
 
 The Sun has radius $6.96 \times 10^8$ m and a surface temperature of about 5770 K. Treating it as a black body, use the Stefan-Boltzmann law $P/A = \sigma T^4$ to compute its total radiated power. The Earth is $1.50 \times 10^{11}$ m away; what power per square meter arrives at the top of our atmosphere? (The measured value, the solar constant, is about 1360 W/m$^2$.)
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+太阳半径为 $6.96 \times 10^8$ m，表面温度约为 5770 K。将其视为黑体，使用斯蒂芬-玻尔兹曼定律 $P/A = \sigma T^4$ 计算其总辐射功率。地球距离 $1.50 \times 10^{11}$ m；顶层大气每平方米接收多少功率？(测量值，太阳常数，约为 1360 W/m$^2$.)
+``````
 
 ## Reference Table of Constants
 
@@ -586,9 +1096,25 @@ The Sun has radius $6.96 \times 10^8$ m and a surface temperature of about 5770 
 - Yet measurements showed $C_V$ falling toward **zero** as $T \to 0$, and diamond fell far short of $3R$ even at room temperature. Classical physics had no answer.
 - In 1907 Einstein modeled each atom as a Planck oscillator of frequency $\nu$ and replaced $k_BT$ with Planck's average energy. Differentiating with respect to $T$ gives
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 普朗克的量子化振子不仅修复了辐射曲线。经典的等分布说，固体中每个原子沿三个方向振动，每个原子存储 $3k_BT$ 的能量，因此摩尔比热容应为常数 $C_V = 3R \approx 25$ J/(mol K)。这就是**杜隆-小珀蒂定律**，在大多数金属的室温下均适用。
+- 然而测量显示，随着 $T \to 0$，$C_V$ 逐渐降向 **零**，即使在室温下，金刚石的热容也远低于 $3R$。经典物理学对此无法解释。
+- 1907 年，爱因斯坦将每个原子建模为频率为 $\nu$ 的普朗克振子，并将 $k_BT$ 替换为普朗克的平均能量。对 $T$ 求导得到
+``````
+
 $$C_V = 3R \left(\frac{\theta_E}{T}\right)^2 \frac{e^{\theta_E/T}}{\left(e^{\theta_E/T}-1\right)^2}, \qquad \theta_E = \frac{h\nu}{k_B}$$
 
 - The **Einstein temperature** $\theta_E$ marks where quantization kicks in: for $T \gg \theta_E$ the formula returns Dulong-Petit, for $T \ll \theta_E$ the oscillators freeze out and $C_V \to 0$. Diamond's stiff bonds give a large $\nu$, hence a high $\theta_E$, which is why it looks "quantum" already at room temperature.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **艾因斯坦温度** $\theta_E$ 标志着量子化开始生效：对于 $T \gg \theta_E$ 公式返回 Dulong-Petit，对于 $T \ll \theta_E$ 振动子冻结，$C_V \to 0$。钻石的刚性键给出了大 $\nu$，因而高 $\theta_E$，这也是为什么它在室温下就显得“量子”了。
+``````
 
 ```{figure} ./images/einstein_heat_capacity.png
 :alt: Einstein heat capacity of copper, aluminum, and diamond versus temperature

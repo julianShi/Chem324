@@ -13,19 +13,51 @@ kernelspec:
 - **Hermite Polynomials as Eigenfunctions:** We will explore how Hermite polynomials serve as the eigenfunctions of the quantum harmonic oscillator.
 - **Effects of Anharmonicity:** Moving beyond the harmonic approximation, we will examine how anharmonicity impacts energy levels in oscillators.
 - **Raising and Lowering Operators:** These operators offer an elegant method for solving the harmonic oscillator problem, marking our first introduction to a powerful tool used throughout quantum mechanics.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **分子振动量子化**：分子的振动自由度是量子化的，对红外和拉曼光谱以及分子键合有重要影响。
+- **零点能的存在与隧道效应**：即使在绝对零度时，能量也非零，我们将其理解为不确定性原理的后果。
+- **埃尔米特多项式作为本征函数：** 我们将探讨埃尔米特多项式如何作为量子谐振子的本征函数。
+- **非谐性的影响：** 超越谐波近似，我们将探讨非谐性如何影响振子的能级。
+- **升降算子：** 这些算子提供了一种优雅的方法求解谐振子问题，标志着我们首次接触到量子力学中贯穿始终的强大工具。
+``````
 :::
 
 ### Hamiltonian of the Harmonic Oscillator
 
 - The classical Hamiltonian for a harmonic oscillator is given by:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 谐振子的经典哈密顿量由下式给出：
+``````
+
 $${H =  \frac{1}{2\mu}p_x^2 + \frac{1}{2}kx^2}$$
 
 - The quantum harmonic oscillator is obtained by replacing the classical position and momentum with the corresponding quantum mechanical operators:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 量子谐振子是通过用相应的量子力学算符取代经典位置和动量而得到的：
+``````
+
 $${\hat{H} = -\frac{\hbar^2}{2\mu}\frac{d^2}{dx^2} + \frac{1}{2}kx^2 }$$
 
 - Now the problem is to solve for the eigenfunctions and eigenvalues. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 现在的问题是求解本征函数和本征值。
+``````
 
 $$\hat{H}\psi_v(x) = E_v \psi_v(x) $$
 
@@ -33,6 +65,15 @@ $$\hat{H}\psi_v(x) = E_v \psi_v(x) $$
 - $k=\frac{\mu}{\omega}$, the spring constant, measures the stiffness of the spring
 - $\omega=2\pi \nu$, the angular frequency of the vibrating atoms  
 - $\nu$, the frequency (Hz; do not confuse this with the quantum number $v$) of the vibrating atoms 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- $k=\frac{\mu}{\omega}$，弹簧常数，衡量弹簧的刚度
+- $\omega=2\pi \nu$，振动原子的角频率
+- $\nu$，振动原子的频率（Hz；不要与量子数 $v$ 混淆）
+``````
 
 ### Eigenfunctions and Eigenvalues 
 
@@ -48,9 +89,25 @@ $$v=0,1,2,3...$$
 - **Scaling factor**, $\alpha = \sqrt{\frac{k\mu}{\hbar^2}}$
 - **Normalization factor**,  ${N_v = \frac{1}{\sqrt{2^vv!}}\left(\frac{\alpha}{\pi}\right)^{1/4}}$
 - **[Hermite polynomials](http://en.wikipedia.org/wiki/Hermite_polynomials)**, $H_v$ 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- **缩放因子**, $\alpha = \sqrt{\frac{k\mu}{\hbar^2}}$
+- **归一化因子**,  ${N_v = \frac{1}{\sqrt{2^vv!}}\left(\frac{\alpha}{\pi}\right)^{1/4}}$
+- **[Hermite polynomials](http://en.wikipedia.org/wiki/Hermite_polynomials)**, $H_v$
+``````
 :::
 
 - For example, the wavefunctions for the two lowest states are:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 例如，两个最低能级的波函数为：
+``````
 
 $${\psi_0(x) = \left(\frac{\alpha}{\pi}\right)^{1/4}e^{-\alpha x^2/2}}$$
 
@@ -69,6 +126,13 @@ $${\psi_1(x) = \left(\frac{4\alpha^3}{\pi}\right)^{1/4} x e^{-\alpha x^2/2}}$$
 
 
 Hermite polynomials obey the following relations, which are useful when evaluating integrals. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+埃尔米特多项式遵循以下关系，这些关系在计算积分时很有用。
+``````
 
 **Characteristic Equation**
 
@@ -215,9 +279,24 @@ plt.show()
 
 - Solutions $\psi_v$ with $v = 1, 3, 5, ...$ are odd: $\psi_v(x) = -\psi_v(-x)$.
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 解 $\psi_v$ 当 $v = 0, 2, 4, ...$ 时为偶函数：$\psi_v(x) = \psi_v(-x)$。
+- 当 $v = 1, 3, 5, ...$ 时，解 $\psi_v$ 为奇函数：$\psi_v(x) = -\psi_v(-x)$。
+``````
+
 **Consequences for evaluating integrals**
 
 - The integral of an odd function from $-a$ to $a$ ($a$ may be $\infty$) is zero.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 奇函数从 $-a$ 到 $a$（$a$ 可以是 $\infty$）的积分为零。
+``````
 
 $$\langle x_n \rangle = \langle n|x |n\rangle =0$$
 
@@ -228,6 +307,14 @@ $$\langle x^2_n\rangle \neq 0$$
 - When you take the derivative of an odd (even) function you make it even (odd). For example, taking the derivative of the odd function $x^3$ gives $3x^2$, an even function. 
 - As a result, we can set the following integral to zero:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 求奇函数（偶函数）的导数时，结果变成偶函数（奇函数）。例如，求奇函数 $x^3$ 的导数得到 $3x^2$，一个偶函数。
+- 因此，我们可以令以下积分为零：
+``````
+
 $$
 \langle p \rangle  = \langle n | \hat{p_x}|n\rangle = 0
 $$
@@ -235,11 +322,25 @@ $$
 - And just like for $x$, if we have two derivatives the expectation expression always returns an even function:
 
 
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 就像 $x$ 一样，如果有两个导数，期望值表达式总是返回偶函数：
+``````
+
+
 $$
 \langle p^2 \rangle  = \langle n | \hat{p^2_x}|n\rangle \neq 0
 $$
 
 **Visual illustration of orthogonality of eigenfunctions for quantum harmonic oscillator**
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+**量子谐振子本征函数正交性的可视化图示**
+``````
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -295,6 +396,14 @@ plot_orthogonality(1, 3)  # Odd vs Odd: H_1(y) and H_3(y)
 
 - The tails of the wavefunctions penetrate into the potential barrier deeper than classical physics would allow. This phenomenon is called **tunneling.**
 - As we excite the system to higher levels, the probability distribution accumulates near the edges, thereby approaching the classical prediction. 
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- 波函数的尾部渗透进势垒的深度比经典物理允许的更深。这种现象称为**隧穿效应**。
+- 当我们将系统激发到更高能级时，概率分布会在边缘处累积，从而趋近于经典预测。
+``````
 
 ```{code-cell} python
 :tags: [hide-input]
@@ -377,6 +486,13 @@ plot_wavefunctions_square(V_VALUES, COLORS)
 :::{note} **Problem 1**
 
 Show that the lowest level of the harmonic oscillator obeys the uncertainty principle.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+证明谐振子的最低能级满足不确定性原理。
+``````
 :::
 
 :::{admonition} **Solution**
@@ -386,10 +502,24 @@ $$\Delta x = \sigma_x = \sqrt{\left<\hat{x}^2\right> - \left<\hat{x}\right>^2}\t
 
 First we calculate $\left<\hat{x}\right>$ ($\psi_0$ is an even function, $x$ is odd, the integrand is odd overall):
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+首先我们计算 $\left<\hat{x}\right>$（$\psi_0$ 是偶函数，$x$ 是奇函数，被积函数整体为奇函数）：
+``````
+
 $$\left<\hat{x}\right> = \int\limits_{-\infty}^{\infty} \psi_0(x)x\psi_0(x)dx = 0$$
 
 
 For $\left<\hat{x}^2\right>$ we have (by integration by parts or from a table of integrals):
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+对于 $\left<\hat{x}^2\right>$，我们有（通过分部积分或查积分表）：
+``````
 
 $$\left<\hat{x}^2\right> = \int\limits_{-\infty}^{\infty} \psi_0(x)x^2\psi_0(x)dx = \left(\frac{\alpha}{\pi}\right)^{1/2}\int\limits_{-\infty}^{\infty}x^2e^{-\alpha x^2}dx = \left(\frac{\alpha}{\pi}\right)^{1/2} \left[\frac{1}{2\alpha}\left(\frac{\pi}{\alpha}\right)^{1/2}\right]$$
 
@@ -401,6 +531,13 @@ For $\left<\hat{p}_x\right>$ we have again by symmetry:
 $$\left<\hat{p}_x\right> = \int\limits_{-\infty}^{\infty} \underbrace{\psi_0(x)}_{\textnormal{even}} \underbrace{\left(-i\hbar\frac{d}{d x}\right) \underbrace{\psi_0(x)}_{\textnormal{even}}}_{\textnormal{odd}} dx = 0$$
 
 Note that the derivative of an even function is an odd function. For $\left<\hat{p}_x^2\right>$ we have:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+注意，偶函数的导数是奇函数。对于 $\left<\hat{p}_x^2\right>$ 我们有：
+``````
 
 $$\left<\hat{p}_x^2\right> = \int\limits_{-\infty}^{\infty} \psi_0(x)p_x^2\psi_0(x)dx = -\hbar^2\left(\frac{\alpha}{\pi}\right)^{1/2}\int\limits_{-\infty}^{\infty} e^{-\alpha x^2/2} \frac{d^2}{dx^2} e^{-\alpha x^2/2} dx$$
 $$= \hbar^2\left(\frac{\alpha}{\pi}\right)^{1/2} \int\limits_{-\infty}^{\infty} (\alpha - \alpha^2 x^2)e^{-\alpha x^2}dx = \left[\hbar^2\left(\frac{\alpha}{\pi}\right)^{1/2}\right]$$
@@ -418,7 +555,21 @@ $$\Delta x\Delta p_x = \sqrt{\frac{1}{2}\frac{\hbar}{\sqrt{\mu k}}}\times \sqrt{
 Recall that the uncertainty principle states that $\Delta x\Delta p_x \ge \frac{\hbar}{2}$.
 
 
+``````{admonition} 中文翻译
+:class: dropdown
+
+回想不确定性原理指出 $\Delta x\Delta p_x \ge \frac{\hbar}{2}$。
+``````
+
+
 Thus we can conclude that $\psi_0$ fulfills the Heisenberg uncertainty principle.
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+因此我们可以得出结论：$\psi_0$ 满足海森堡不确定性原理。
+``````
 :::
 
 
@@ -428,9 +579,25 @@ Thus we can conclude that $\psi_0$ fulfills the Heisenberg uncertainty principle
 
 Quantization of nuclear motion. [Molecular vibration](http://en.wikipedia.org/wiki/Molecular_vibration) in a diatomic molecule can be approximated by the quantum mechanical harmonic oscillator model. There $\mu$ is the reduced mass as given previously and the variable $x$ is the distance between the atoms in the molecule (or more exactly, the deviation from the equilibrium bond length $R_e$).
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+核运动量子化。[分子振动](http://en.wikipedia.org/wiki/Molecular_vibration) 可以用量子力学谐振子模型近似。此处 $\mu$ 为先前给出的简并质量，变量 $x$ 为分子中原子之间的距离（或更准确地说，离平衡键长 $R_e$ 的偏差）。
+``````
+
 - a. Derive the expression for the standard deviation of the bond length in a diatomic molecule when it is in its ground vibrational state.
 - b. What percentage of the equilibrium bond length is this standard deviation for carbon monoxide in its ground vibrational state? For $^{12}C^{16}O$, we have:
 $\tilde{v}$ = 2170 cm$^{-1}$ (vibrational frequency) and $R_e$ = 113 pm (equilibrium bond length)
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+- a. 推导双原子分子处于基态振动态时键长标准差的表达式。
+- b. 氢原子在基态振动模式下，标准差占平衡键长的百分比是多少？对于 $^{12}C^{16}O$，我们有：
+$\tilde{v}$ = 2170 cm$^{-1}$ (振动频率) 和 $R_e$ = 113 pm (平衡键长)
+``````
 :::
 
 
@@ -439,14 +606,35 @@ $\tilde{v}$ = 2170 cm$^{-1}$ (vibrational frequency) and $R_e$ = 113 pm (equilib
 
 The harmonic vibration frequency is given in wavenumber units ($cm^{-1}$). This must be converted according to $\nu = c\tilde{v}$. The previous example gives the expression for $\sigma_x$:
 
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+谐振子振动频率以波数单位 ($cm^{-1}$) 给出。必须根据 $\nu = c\tilde{v}$ 转换。上一个例子给出了 $\sigma_x$ 的表达式：
+``````
+
 $$\sigma_x = \Delta x = \sqrt{\frac{1}{2}\frac{\hbar}{\sqrt{\mu k}}}$$
 
 In considering spectroscopic data, it is convenient to express this in terms of $\tilde{v}$:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在考虑光谱数据时，用 $\tilde{v}$ 来表示比较方便：
+``````
 
 $$k = \left(2\pi c\tilde{v}\right)^2\mu\textnormal{ and }\Delta x = \sigma_x = \sqrt{\frac{\hbar}{4\pi c\tilde{v}\mu}}$$
 
 
 In part (b) we apply the above expression to find the standard deviation of the carbon monoxide bond length in its ground vibrational state. First we need the reduced mass:
+
+
+``````{admonition} 中文翻译
+:class: dropdown
+
+在（b）部分，我们对上述表达式应用以求取碳单氧化物在基态振动模式下键长的标准偏差。首先我们需要简并质量：
+``````
 
 $$\mu = \frac{m_1m_2}{m_1 + m_2} = \frac{(12\times 10^{-3}\textnormal{ kg mol}^{-1})(15.995\times 10^{-3}\textnormal{ kg mol}^{-1})}
 {((12 + 15.995)\times 10^{-3}\textnormal{ kg mol}^{-1})\underbrace{(6.022\times 10^{23}\textnormal{ mol}^{-1})}_{\textnormal{Avogadro's constant}}}$$
