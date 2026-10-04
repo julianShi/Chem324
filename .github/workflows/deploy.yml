@@ -9,6 +9,16 @@ on:
 permissions:
   contents: write   # peaceiris pushes the built HTML to the gh-pages branch
 
+# Serialise deploys. Two pushes in quick succession start two runs that each build
+# and each push gh-pages; the loser dies with
+#   ! [remote rejected] gh-pages -> gh-pages
+#   (cannot lock ref 'refs/heads/gh-pages': is at X but expected Y)
+# because the ref moved after it cloned. Queue instead of cancelling: a cancelled
+# run leaves gh-pages holding a half-published site.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
